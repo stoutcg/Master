@@ -298,7 +298,7 @@ int main() {
 //  double fs_tio2A[MAX1];
 
 	Df = 3.0;
-	if ((fptr = fopen("main.inp", "r+")) == NULL) //Opening the input file that contains property data for the aerosol material.
+	if ((fptr = fopen("main.inp.txt", "r+")) == NULL) //Opening the input file that contains property data for the aerosol material.
 	{
 		printf("Warning: Could not open file");
 		return (-1);
@@ -318,9 +318,11 @@ int main() {
 			"\nPOSITION(m)\t\tDENSITY(Kg/m3)\t\tVELOCITY(m/s)\t\tTEMP(K)\t\tMWEIGHT\t\tD_VISCOSITY(Kg/m/S)\t\tTHERMO_CONDUC(W/m/K)");
 
 	for (j = 1; j <= NSTEP; j++) {
-		fscanf(fdata, "%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf\n",
+		fscanf(fdata, "%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf\n",
 				&POSIF[j], &DENSITYF[j], &VELOF[j], &TEMPF[j], &SN1, &SN2, &SN3,
 				&SN4, &SN5, &SN6, &SN7, &SN8, &SN9, &SN10, &DV[j], &TC[j]);
+
+		
 		//fscanf(fdata,"%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf%lf\n",&POSIF[j],&DENSITYF[j],&VELOF[j],&TEMPF[j],&SN1,&SN2,&SN3,&SN4,&SN5,&SN6,&SN7,&SN8,&SN9,&DV[j],&TC[j],&SN10,&SN11);
 		POSIF[j] = POSIF[j] / 100.0;
 		VELOF[j] = VELOF[j] / 100.0;
