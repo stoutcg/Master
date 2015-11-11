@@ -1,7 +1,7 @@
 Number of nodes: 103
 Starting Temperature(Kelvin): 1773
-Cooling Rate(Kelvin/s):1000 
-Pressure(Atm): 0.02613
+Cooling Rate(Kelvin/s):10000 
+Pressure(Atm): 1
 Molecular Weight(Kg/mol): 0.07987
 Density(Kg/m3):	3840
 Surface Tension in the form A-BT(dyne/cm): A=1364 B=0.15
