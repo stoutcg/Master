@@ -3,7 +3,7 @@ Starting Temperature(Kelvin): 7000
 Cooling Rate(Kelvin/s):10000 
 Pressure(Atm): 1
 Molecular Weight(Kg/mol): 0.02482
-Density(Kg/m3):	2200
+Density(Kg/m3):	3450
 Surface Tension in the form A-BT(dyne/cm): A=1364 B=0.15
 Saturation Vapor Pressure of material in form Ps=exp(C-D/T)P: C=18.9 D=69076.8 
 Enter your choice - 1)Coagulation,2)nucleation+coagulation,3)nucleation + coagulation + surface growth,4)surface 
